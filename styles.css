@@ -135,6 +135,13 @@ main {
     text-align: justify;
 }
 
+.texto h2{
+    max-width: 1400px;
+    font-family: "Orbitron",sans-serif;
+    font-size: 25px;
+    text-align: left;
+}
+
 @media (max-width: 800px) {
     .recuadro-descripcion {
         flex-direction: column;
