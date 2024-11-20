@@ -65,6 +65,8 @@ header {
     background-color: #0a0a0a;
     padding: 10px 20px;
     flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
 }
 
 nav {
@@ -78,7 +80,7 @@ nav {
 
 .logo h1 {
     font-size: 3.5em;
-    color: #ff5500;
+    color: #750020;
 }
 
 .nav-links {
@@ -108,6 +110,7 @@ main {
     align-items: center;
     gap: 20px;
     padding: 20px;
+    margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #000000;
@@ -125,7 +128,7 @@ main {
 
 .recuadro-descripcion h2 {
     margin-bottom: 50px;
-    color: #ff5500;
+    color: #750020;
 }
 
 .texto {
@@ -142,10 +145,88 @@ main {
     text-align: left;
 }
 
+
+.Login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* usa el 75% de lo que se ve en pantalla */
+    background-color: #111;
+    background-image: 
+    linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(164,171,175,0.3) 50%, rgba(17,17,17,1) 100%),
+        url('Images/Panoramica.jpeg');
+    background-size: cover;/* cubre literlamente todo xd */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Login p{
+    font-size: 0.8em;
+}
+
+.singup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* usa el 75% de lo que se ve en pantalla */
+    background-color: #111;
+    background-image: 
+    linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(164,171,175,0.3) 50%, rgba(17,17,17,1) 100%),
+        url('Images/Panoramica2.jpeg');
+    background-size: cover;/* cubre literlamente todo xd */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.singup p{
+    font-size: 0.8em;
+}
+
+.Registro {
+    display: flex;
+    flex-direction: column; /* que todo quede en una columna */
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    width: auto; /* Fija un ancho para el recuadro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: auto; /* para que sea igual a amboss lados se deja en automatico */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input{
+    border: none; /* Elimina el borde */
+    border-bottom: 2px solid #750020;
+    outline: none; /* Evita el contorno azul al hacer clic */
+    background-color: #1a1a1a; /* Fondo oscuro para coherencia */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1em;
+}
+
+
+input:hover {
+    border-bottom: 2px solid #ff4c4c;
+    background-color: #222;
+}
+
+
 @media (max-width: 800px) {
     .recuadro-descripcion {
         flex-direction: column;
         flex-wrap: nowrap;
+        margin-bottom: 20px;
         text-align: center;
         width: 100%;
     }
@@ -173,7 +254,7 @@ main {
 
     .logo h1 {
         font-size: 10vw;
-        color: #ff5500;
+        color: #750020;
     }
 
     .nav-links a {
