@@ -63,4 +63,5 @@ window.onload = function () {
       observer.observe(glitchText);
     });
   };
+
   

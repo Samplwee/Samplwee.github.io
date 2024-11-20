@@ -9,5 +9,6 @@ Isesion.addEventListener('submit', (e) =>{
         return alert('Usuario o Contraseña incorrectos')
     }
     alert('Bienvenido')
+    localStorage.setItem('login_succes', JSON.stringify(validUser))
     window.location.href = 'perfil.html'
 })
