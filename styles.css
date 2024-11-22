@@ -65,7 +65,7 @@ header {
     background-color: #0a0a0a;
     padding: 10px 20px;
     flex-wrap: wrap;
-    position: static;
+    position: fixed;
     width: 100%;
     z-index: 9999;
 }
@@ -222,16 +222,73 @@ input:hover {
     background-color: #222;
 }
 
+.perfil {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #121212;
+}
+
+.boton{
+    border: none; /* Elimina el borde */
+    border-bottom: 2px solid #750020;
+    outline: none; /* Evita el contorno azul al hacer clic */
+    background-color: #1a1a1a; /* Fondo oscuro para coherencia */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1em;
+}
+
+.boton:hover {
+    border-bottom: 2px solid #ff4c4c;
+    background-color: #222;
+}
+
+.panel {
+    background-color: #1a1a1a;
+    padding: 20px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    order: -1;
+}
+
+.panel img {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.panel p{
+    max-width: 90%;
+    font-family: "Orbitron",sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    font-size: 0.8em;
+}
 
 .cuerpo {
-    width: 50%; /* Ajusta el ancho */
-    height: 100vh; /* Reduce la altura total del grid */
-    margin-left: 60%;
+    width: 80%;
+    height: 100%;
     display: grid;
-    padding: 10%;
+    padding: 20%;
+    padding-top: 8%;
+    padding-bottom: 5%;
     gap: 5px;
     grid-template-columns: 10% 20% 10%;
     grid-template-rows: 1fr 2fr 3fr;
+    background-image: 
+    linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(164,171,175,0.3) 50%, rgba(17,17,17,1) 100%),
+        url('Images/Taller.jpg');
+    background-size: cover;/* cubre literlamente todo xd */
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .caja {
@@ -258,8 +315,6 @@ input:hover {
     filter: drop-shadow(0 0 20px rgb(255, 255, 255));
     transform: scale(1.2);
 }
-
-
 
 .torso {
     grid-column-start: 2;
@@ -333,22 +388,6 @@ input:hover {
 .piernas img:hover {
     filter: drop-shadow(0 0 20px rgb(255, 255, 255));
     transform: scale(1.2);
-}
-
-.perfil{
-    overflow:hidden
-}
-
-
-aside {
-    background-color: #1a1a1a;
-    padding: 20px;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 800px) {

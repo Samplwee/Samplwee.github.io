@@ -10,3 +10,7 @@ logout.addEventListener('click', ()=>{
     localStorage.removeItem('login_succes')
     window.location.href = 'index.html'
 })
+
+
+const NombreUsuario = document.getElementById("user-name");
+NombreUsuario.textContent = `Bienvenido, ${user.name}`;
