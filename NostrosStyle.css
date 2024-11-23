@@ -74,15 +74,19 @@ main {
 }
 
 footer {
-    background-color: #0a0a0a;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #711e1e;
     padding: 20px 0;
     text-align: center;
-    margin-top: 40px;
 }
 
-.pieDePagina p {
-    color: #fff;
-    font-size: 16px;
+.pieDePagina {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
 
 .redes-sociales {
