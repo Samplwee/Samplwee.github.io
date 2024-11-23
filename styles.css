@@ -250,13 +250,14 @@ input:hover {
 .panel {
     background-color: #1a1a1a;
     padding: 20px;
-    width: 20%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     order: -1;
+    padding-top: 20%;
 }
 
 .panel img {
@@ -277,18 +278,16 @@ input:hover {
     width: 80%;
     height: 100%;
     display: grid;
-    padding: 20%;
-    padding-top: 8%;
+    padding-top: 20%;
     padding-bottom: 5%;
     gap: 5px;
-    grid-template-columns: 10% 20% 10%;
-    grid-template-rows: 1fr 2fr 3fr;
     background-image: 
     linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(164,171,175,0.3) 50%, rgba(17,17,17,1) 100%),
         url('Images/Taller.jpg');
     background-size: cover;/* cubre literlamente todo xd */
     background-repeat: no-repeat;
     background-position: center;
+    overflow-y: scroll;
 }
 
 .caja {
@@ -314,6 +313,7 @@ input:hover {
     height: 100%;
     filter: drop-shadow(0 0 20px rgb(255, 255, 255));
     transform: scale(1.2);
+    z-index: 999;
 }
 
 .torso {
@@ -334,6 +334,7 @@ input:hover {
 .torso img:hover {
     filter: drop-shadow(0 0 20px rgb(255, 255, 255));
     transform: scale(1.2);
+    z-index: 999;
 }
 
 
@@ -353,6 +354,7 @@ input:hover {
 .brazo-izquierdo img:hover{
     filter: drop-shadow(0 0 20px rgb(255, 255, 255));
     transform: scale(1.2);
+    z-index: 999;
 }
 
 .brazo-derecho {
@@ -371,6 +373,7 @@ input:hover {
 .brazo-derecho img:hover{
     filter: drop-shadow(0 0 20px rgb(255, 255, 255));
     transform: scale(1.2);
+    z-index: 999;
 }
 
 .piernas {
@@ -388,6 +391,7 @@ input:hover {
 .piernas img:hover {
     filter: drop-shadow(0 0 20px rgb(255, 255, 255));
     transform: scale(1.2);
+    z-index: 999;
 }
 
 @media (max-width: 800px) {
@@ -429,5 +433,17 @@ input:hover {
         color: #ffffff;
         text-decoration: none;
         font-size: 3vw;
+    }
+
+    .panel{
+        overflow-x: scroll;
+    }
+
+    .panel h2{
+        font-size: 1rem;
+    }
+
+    .panel p{
+        font-size: 1rem;
     }
 }
