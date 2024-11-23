@@ -395,6 +395,33 @@ input:hover {
     z-index: 999;
 }
 
+footer {
+    background-color: #6b6b6b;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pieDePagina p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.redes-sociales {
+    margin-top: 10px;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+}
+
+
 @media (max-width: 800px) {
     .recuadro-descripcion {
         flex-direction: column;
