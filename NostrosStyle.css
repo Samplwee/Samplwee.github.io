@@ -73,6 +73,48 @@ main {
     padding: 5%;
 }
 
+.historia {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto; /* Permite el scroll horizontal */
+    padding: 20px;
+}
+
+.card {
+    background-color: #222;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0; /* Evita que los cards se achiquen en el contenedor */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Hace que el card crezca al pasar el mouse */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #e31c1c;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 1em;
+    color: #fff;
+    text-align: justify;
+}
+
 footer {
     margin-top: 0px;
     display: flex;
@@ -132,4 +174,12 @@ footer {
         font-size: 3vw;
     }
 
+    .evento {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .evento img {
+        max-width: 100%;
+    }
 }
